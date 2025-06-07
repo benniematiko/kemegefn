@@ -36,7 +36,6 @@ export const Nav = styled.nav`
 
 export const Navcontainer = styled.div`
   width: 86%;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -115,6 +114,7 @@ export const NavList = styled.ul`
   justify-content: flex-end;
   font-size: 16px;
   flex-wrap: wrap;
+  
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     width: 24rem;
@@ -149,7 +149,7 @@ export const NavItemStyled = styled.li`
 `;
 
 export const NavLink = styled.a`
-  text-transform: capitalize;
+  text-transform: uppercase;
   color: ${({ theme }) => theme.colors.white};
 
   list-style: none;

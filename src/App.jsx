@@ -42,6 +42,7 @@ const App = () => {
             <Route path="/education" element={<Education />} />
           </Routes>
         </BrowserRouter>
+        
       </ThemeProvider>
     </>
   );

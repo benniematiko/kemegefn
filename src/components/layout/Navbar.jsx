@@ -17,17 +17,22 @@ import {
 } from "../styles/layout/Nav.styled";
 import { NavItems } from "../../data/NavItems";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+import { CTAButton } from "../styles/common/CTAButton.styled";
+import TopBanner from "./TopBanner";
 
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <>
+    <TopBanner/>
       <Nav>
+        
         <Navcontainer>
           <div>
             <Link to="/">
               <Logo>Hon. Tyson Kemege</Logo>
+              <p>My calling is to serve people</p>
             </Link>
           </div>
           <MenuIcon menuOpen={menuOpen} onClick={() => setMenuOpen(!menuOpen)}>
@@ -47,8 +52,9 @@ export const Navbar = () => {
                   {navItem.isProfile ? (
                     <NavLink href="#hero-section">
                       <Profile>
-                        <img src="./images/logo.jpg" alt="profile-pic" />
+                        <img src="./images/logo.jpg" alt="profile-pic" /> 
                         <span>Hon Tyson Kemege</span>
+                        
                       </Profile>
                     </NavLink>
                   ) : null}
@@ -58,9 +64,7 @@ export const Navbar = () => {
                     <NavLink href={navItem.href}>{navItem.text}</NavLink>
                   ) : null}
 
-                  {
-                  navItem.hasSocialIcons ? (
-
+                  {navItem.hasSocialIcons ? (
                     <SocialIcons>
                       <NavLink href="#facebook" target="_blank">
                         <FaFacebook />
@@ -72,8 +76,12 @@ export const Navbar = () => {
                         <FaInstagram />
                       </NavLink>
                     </SocialIcons>
-                  ) : null
-                }
+                  ) : null}
+                  {navItem.hasCTA ? (
+                     <CTAButton href="" target="_blank">
+                      Community Engagement(PDF)
+                     </CTAButton>
+                  ) : null }
                 </NavItemStyled>
               ))}
           </NavList>
