@@ -21,9 +21,18 @@ export const MeetTysonTitle = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2.2rem;
-  text-transform: uppercase;
-  padding-bottom: 30px;
+  flex-direction: column;
+
+  h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    
+  }
+
+  p {
+    font-size: 18px;
+    padding-bottom: 30px;
+  }
 `;
 
 export const MeetTysonContents = styled.div`
@@ -36,20 +45,17 @@ export const MeetTysonContents = styled.div`
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 30px;
-    
   }
 `;
 
 export const MeetTysonLeft = styled.div`
   width: 100%;
 
-  @media(max-width: 960px){
+  @media (max-width: 960px) {
     img {
       width: 100%;
     }
   }
-
-  
 `;
 export const MeetTysonRight = styled.div`
   width: 100%;
@@ -58,7 +64,7 @@ export const MeetTysonRight = styled.div`
   justify-content: flex-start;
   flex-direction: column;
 
-  @media(max-width: 960px){
+  @media (max-width: 960px) {
     width: 100%;
   }
 `;
@@ -67,6 +73,4 @@ export const MeetTysonRightp = styled.p`
   display: flex;
   font-size: 18px;
   line-height: 24px;
-
-  
 `;

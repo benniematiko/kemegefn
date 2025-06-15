@@ -1,3 +1,4 @@
+import { CTAButton } from "../styles/common/CTAButton.styled";
 import {
   MeetTysonContainer,
   MeetTysonContents,
@@ -14,6 +15,7 @@ const MeetTyson = () => {
       <MeetTysonContainer>
         <MeetTysonTitle>
           <h1>Meet Hon. Tyson Kemege</h1>
+          <p>A brief about me</p>
         </MeetTysonTitle>
         <MeetTysonContents>
           <MeetTysonLeft>
@@ -36,11 +38,11 @@ const MeetTyson = () => {
               housing to healthcare—and the persistent neglect of our
               communities. Security challenges, including cattle rustling and
               instability, continue to affect our people, disrupting even school
-              programs. 
+              programs.
               <br />
               <br />
-              For too long, politicians have prioritized personal egos
-              over tangible progress for our families.
+              For too long, politicians have prioritized personal egos over
+              tangible progress for our families.
             </MeetTysonRightp>
 
             <br />
@@ -57,6 +59,12 @@ const MeetTyson = () => {
               and law enforcement, reflecting his broad appeal and commitment to
               all communities.
             </MeetTysonRightp>
+
+            <div>
+              <CTAButton href="#pwds" primary margin="20px 0 0 0">
+                Learn More
+              </CTAButton>
+            </div>
           </MeetTysonRight>
         </MeetTysonContents>
       </MeetTysonContainer>

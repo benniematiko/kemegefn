@@ -58,8 +58,7 @@ export const Navbar = () => {
                       </Profile>
                     </NavLink>
                   ) : null}
-                  {/* <NavLink href="">About</NavLink> */}
-                  {/* <NavLink to="/projects">{navItem.text}</NavLink> */}
+                 
                   {navItem.text ? (
                     <NavLink href={navItem.href}>{navItem.text}</NavLink>
                   ) : null}

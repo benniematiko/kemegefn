@@ -1,12 +1,14 @@
-import React from 'react'
+
+import { ProjectsSectionStyled } from './Projects.styled'
+
 
 const Projects = () => {
   return (
-    <div>
-
+    <ProjectsSectionStyled>
       <h1>Projects</h1>
-      
-    </div>
+    </ProjectsSectionStyled> 
+     
+    
   )
 }
 

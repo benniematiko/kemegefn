@@ -121,7 +121,7 @@ export const NavList = styled.ul`
     /* height: 100vh; */
     height: auto;
     position: fixed;
-    background-color: #6e879c;
+    background: #6e879c;
     top: 0;
 
     right: ${({ menuOpen }) => (menuOpen ? "0" : "-24rem")};
