@@ -12,14 +12,6 @@ export const FooterStyledTop = styled.div`
   background: #072f5f;
 `;
 
-
-export const FooterStyledBottom = styled.div`
-  width: 100%;
- 
-  background: #04244d;
-`;
-
-
 export const FooterStyledContainer = styled.div`
   width: 86%;
   margin: 0 auto;

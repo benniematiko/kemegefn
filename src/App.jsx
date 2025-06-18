@@ -10,7 +10,9 @@ import Projects from "./pages/projects/Projects";
 import Education from "./pages/education/Education";
 import Services from "./pages/services/Services";
 import Pwdsupport from "./pages/supportpwd/Pwdsupport";
-import {Footer} from "./components/layout/Footer";
+import Footer from "./components/layout/Footer";
+import FooterCopyRight from "./components/layout/FooterCopyRight";
+
 
 const App = () => {
   // We create a theme heree, such as common colors
@@ -44,6 +46,7 @@ const App = () => {
           </Routes>
 
           <Footer/>
+          <FooterCopyRight/>
         </BrowserRouter>
         
       </ThemeProvider>

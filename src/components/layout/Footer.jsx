@@ -38,7 +38,7 @@ const Footer = () => {
               </ul>
             </div>
             <div className="contactinfo">
-              <h1>contactinfo</h1>oioioioioioi
+              <h1>contactinfo</h1>
               <span>Location</span>
               <span>40, Ntimaru,</span>
               <span>Migori, Kenya.</span>
@@ -54,9 +54,7 @@ const Footer = () => {
         </FooterStyledContainer>
       </FooterStyledTop>
 
-      <FooterStyledBottom>
-        <p>© 2024. Tyson Kemege Digital Spaces. All Rights Reserved. </p>
-      </FooterStyledBottom>
+     
     </FooterStyled>
   );
 };
