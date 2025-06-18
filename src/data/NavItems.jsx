@@ -4,7 +4,7 @@ export const NavItems = [
   },
   {
     href: "services",
-    text: "Services",
+    text: "Campaigns",
   },
   {
     href: "pwdsupport",

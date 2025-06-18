@@ -114,7 +114,6 @@ export const NavList = styled.ul`
   justify-content: flex-end;
   font-size: 16px;
   flex-wrap: wrap;
-  
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     width: 24rem;
@@ -194,12 +193,9 @@ export const Profile = styled.div`
     span {
       font-size: 12px;
       margin-bottom: 1rem;
-
-      
     }
   }
 `;
-
 
 export const SocialIcons = styled.div`
   display: none;

@@ -25,7 +25,7 @@ const PrioritiesSection = () => {
               <SinglePriorities key={index}>
                 <PrioritiesImage>
                   <img
-                    src="./images/kemege10.jpg"
+                    src={prioritydata.image}
                     alt=""
                     className="prioritiesimage"
                   />

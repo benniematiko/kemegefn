@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const MeetTysonSection = styled.section`
   width: 100%;
+  padding: 60px 0;
 `;
 
 export const MeetTysonContainer = styled.div`
@@ -17,21 +18,22 @@ export const MeetTysonContainer = styled.div`
 `;
 
 export const MeetTysonTitle = styled.div`
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  width: 100%;  
 
   h1 {
     font-size: 2.5rem;
     text-transform: uppercase;
+    /* text-align: left; */
     
   }
 
   p {
-    font-size: 18px;
-    padding-bottom: 30px;
+        
+    font-size: 1.9rem;
+    line-height: 2.8rem;
+    margin-bottom: 20px;
+    font-weight: 200;
+   
   }
 `;
 
@@ -71,6 +73,7 @@ export const MeetTysonRight = styled.div`
 
 export const MeetTysonRightp = styled.p`
   display: flex;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 1.9rem;
+  line-height: 2.8rem;
+  font-weight: 200;
 `;

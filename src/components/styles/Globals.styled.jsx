@@ -10,7 +10,8 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   html {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: 'Outfit',sans-serif;
     /* font-family: "Share Tech Mono", monospace; */
     scroll-behavior: smooth;
     /* color: ${({ theme }) => theme.colors.white}; */

@@ -15,7 +15,6 @@ const GetInvolvedSections = () => {
           <h1>GET INVOLVED</h1>
           <p>You can become path of this noble course</p>
         </GetInvolvedTitle>
-
         <GetInvolvedContents>
           <GetInvolvedLeft>
             <h1>Volunteer</h1>

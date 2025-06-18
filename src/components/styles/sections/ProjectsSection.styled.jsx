@@ -5,8 +5,8 @@ export const ProjectsSectionStyled = styled.section`
 `;
 
 export const ProjectsSectionContainer = styled.div`
-  width: 86%;
-  margin: 0 auto;
+  width: 100%;
+  
 `;
 export const ProjectsSectionTitle = styled.div`
   width: 100%;
@@ -29,7 +29,7 @@ export const ProjectsSectionTitle = styled.div`
 export const ProjectsSectionContent = styled.div`
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(7, 1fr);
 `;
 
 // export const ProjectsSectionLeft = styled.div`
@@ -41,5 +41,12 @@ export const ProjectsSectionContent = styled.div`
 
 
 export const PrioritiesImage = styled.img`
-  width: 216px;
+  width: 100%;
+  height: 100%;
+
+ 
+  
 `
+
+                      
+

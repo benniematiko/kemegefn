@@ -4,7 +4,6 @@ import {
   PrioritiesImage,
   ProjectsSectionContainer,
   ProjectsSectionContent,
- 
   ProjectsSectionStyled,
   ProjectsSectionTitle,
 } from "../styles/sections/ProjectsSection.styled";
@@ -19,35 +18,22 @@ const ProjectsSection = () => {
         </ProjectsSectionTitle>
 
         <ProjectsSectionContent>
-
-          {/* <ProjectsSectionLeft>
-            sdsdsdsds
-          </ProjectsSectionLeft>
-          <ProjectsSectionRight>
-            sdsdsdsds
-          </ProjectsSectionRight> */}
-
-          {
-
-            
-            ProjectsDatas.map(( projectdata, index )=>{
-              return(
-                <div key={index}>
-                  <div>
-                    <Link>
-                    <PrioritiesImage src={projectdata.image} alt="" />
-                    </Link>
-                    </div>
-                 
+          {ProjectsDatas.map((projectdata, index) => {
+            return (
+              <div key={index}>
+                <div>
+                  <Link>
+                    <PrioritiesImage
+                      src={projectdata.image}
+                      alt=""
+                      className="productImage"
+                    />
+                  </Link>
                 </div>
-              )
-            })
-          }
-
-
-
+              </div>
+            );
+          })}
         </ProjectsSectionContent>
-
       </ProjectsSectionContainer>
     </ProjectsSectionStyled>
   );

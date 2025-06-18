@@ -1,15 +1,18 @@
 import React from 'react'
+import { EducationStyled } from './Education.styled'
 
 const Education = () => {
   return (
-    <div>
+    <EducationStyled>
 
-      <h1>Education</h1>
+      <img src="./images/kemege206.jpeg" />
 
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi earum iusto nemo illo at tenetur. Sint, doloremque, commodi dignissimos officia, voluptates tenetur vero dolores nulla consequuntur totam dolore quis optio?
-      
-    
-    </div>
+
+
+
+
+
+    </EducationStyled>
   )
 }
 

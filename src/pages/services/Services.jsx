@@ -1,12 +1,21 @@
 import React from 'react'
+import { ServicesStyled, ServicesStyledContainer } from './Services.styled'
+
+
 
 const Services = () => {
   return (
-    <div>
+    <ServicesStyled>
 
-      <h1>Services</h1>
-      
-    </div>
+      <img src="./images/kemege203.png" />
+
+
+
+      <ServicesStyledContainer>
+
+      </ServicesStyledContainer>
+
+    </ServicesStyled>
   )
 }
 

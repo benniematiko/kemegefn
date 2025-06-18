@@ -9,10 +9,23 @@ import {
 } from "../styles/sections/HeroSection.styled";
 import { FaArrowDown, FaFacebook, FaInstagram } from "react-icons/fa";
 
+
+
+import { motion } from "framer-motion";
+import { slideUpVariants, zoomInVariants } from "../animation";
+
 const HeroSection = () => {
   return (
     <StyledHeroSection>
-      <HeroContent>
+
+      <motion.div
+
+      initial="hidden"
+        whileInView="visible"
+        variants={slideUpVariants}
+      >
+
+        <HeroContent>
         <h1>A Leader . Family Man . Community Mobilizer</h1>
         <div>
           <CTAButton href="#projects">Community Projects</CTAButton>
@@ -35,6 +48,13 @@ const HeroSection = () => {
           </SocialIcon>
         </HeroSocialIcon>
       </HeroContent>
+
+
+
+      </motion.div>
+
+
+
       <StyledArrowDown href="#about">
         <FaArrowDown />
       </StyledArrowDown>

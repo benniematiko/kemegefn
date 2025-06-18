@@ -5,14 +5,18 @@ import PrioritiesSection from "../../components/sections/PrioritiesSection";
 import EventsSections from "../../components/sections/EventsSections";
 import ProjectsSection from "../../components/sections/ProjectsSection";
 import GetInvolvedSections from "../../components/sections/GetInvolvedSections";
+import JoinSections from "../../components/sections/JoinSections";
 
 const Home = () => {
   return (
     <div>
+
+      
       <HeroSection />
+      <JoinSections/>
+      {/* <EventsSections /> */}
       <MeetTyson />
       <PrioritiesSection />
-      <EventsSections />
       <ProjectsSection />
       <GetInvolvedSections />
     </div>
