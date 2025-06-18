@@ -1,7 +1,6 @@
 import React from "react";
 import {
-  FooterStyled,
-  FooterStyledBottom,
+  FooterStyled, 
   FooterStyledContainer,
   FooterStyledContent,
   FooterStyledTop,
@@ -26,7 +25,7 @@ const Footer = () => {
               </ul>
             </div>
             <div className="usefullinks">
-              <h1>usefullinks</h1>
+              <h1>Usefullinks</h1>
               <ul>
                 <li></li>
                 <li>Join Us</li>
@@ -38,7 +37,7 @@ const Footer = () => {
               </ul>
             </div>
             <div className="contactinfo">
-              <h1>contactinfo</h1>
+              <h1>Contactinfo</h1>
               <span>Location</span>
               <span>40, Ntimaru,</span>
               <span>Migori, Kenya.</span>
@@ -48,7 +47,7 @@ const Footer = () => {
               <span>info@tysonkemege.ke</span>
             </div>
             <div className="download">
-              <h1>download</h1>
+              <h1>Download</h1>
             </div>
           </FooterStyledContent>
         </FooterStyledContainer>

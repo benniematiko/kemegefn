@@ -11,6 +11,9 @@ import {
   SinglePriorities,
 } from "../styles/sections/PrioritiesSection.styled";
 
+import { motion } from "framer-motion";
+import { slideUpVariants, zoomInVariants } from "../animation";
+
 const PrioritiesSection = () => {
   return (
     <PrioritiesSectionStyled>
