@@ -38,7 +38,7 @@ const Footer = () => {
               </ul>
             </div>
             <div className="contactinfo">
-              <h1>contactinfo</h1>
+              <h1>contactinfo</h1>oioioioioioi
               <span>Location</span>
               <span>40, Ntimaru,</span>
               <span>Migori, Kenya.</span>
