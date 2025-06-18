@@ -6,6 +6,7 @@ import EventsSections from "../../components/sections/EventsSections";
 import ProjectsSection from "../../components/sections/ProjectsSection";
 import GetInvolvedSections from "../../components/sections/GetInvolvedSections";
 import JoinSections from "../../components/sections/JoinSections";
+import LatestSection from "../../components/sections/LatestSection";
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
       <PrioritiesSection />
       <ProjectsSection />
       <GetInvolvedSections />
+      <LatestSection/>
     </div>
   );
 };

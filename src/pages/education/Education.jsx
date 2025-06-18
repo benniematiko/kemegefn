@@ -1,16 +1,14 @@
 import React from 'react'
-import { EducationStyled } from './Education.styled'
+import { Educationbanner, EducationStyled } from './Education.styled'
 
 const Education = () => {
   return (
     <EducationStyled>
 
-      <img src="./images/kemege206.jpeg" />
+   
+        <Educationbanner src="./images/kemege206.jpeg" className="educationbanner" />
 
-
-
-
-
+           
 
     </EducationStyled>
   )

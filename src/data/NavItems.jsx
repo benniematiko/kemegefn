@@ -3,7 +3,7 @@ export const NavItems = [
     isProfile: true,
   },
   {
-    href: "services",
+    href: "campaigns",
     text: "Campaigns",
   },
   {

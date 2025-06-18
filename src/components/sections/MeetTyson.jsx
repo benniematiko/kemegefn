@@ -15,13 +15,20 @@ import { slideUpVariants, zoomInVariants } from "../animation";
 const MeetTyson = () => {
   return (
     <MeetTysonSection>
-      <MeetTysonContainer>
-        <motion.div
+
+      <motion.div
           initial="hidden"
           whileInView="visible"
           variants={slideUpVariants}
         >
+
+      <MeetTysonContainer>
+        
           <MeetTysonContents>
+
+            <motion.h1 variants={slideUpVariants}>
+
+
             <MeetTysonLeft>
               <img
                 src="./images/kemege23.png"
@@ -30,44 +37,38 @@ const MeetTyson = () => {
               />
             </MeetTysonLeft>
 
+             </motion.h1>
+
             <MeetTysonRight>
-              <MeetTysonTitle>
-                <h1>Meet Kemege</h1>
-                <p>A brief about me</p>
-              </MeetTysonTitle>
-              <MeetTysonRightp>
-                Hon. TK was raised at the Komotobo Orphan Mission and now
-                resides in Ntimaru with his xxxx, xxxx, and their two xxxx, xxx
-                and xxxxx.
-              </MeetTysonRightp>
+              <motion.h1 variants={slideUpVariants}>
+                <MeetTysonTitle>
+                  <h1>Meet Kemege</h1>
+                  <p>A brief about me</p>
+                </MeetTysonTitle>
+              </motion.h1>
 
-              <br />
-              <MeetTysonRightp>
-                He understands the escalating costs of family life—from fuel and
-                housing to healthcare—and the persistent neglect of our
-                communities. Security challenges, including cattle rustling and
-                instability, continue to affect our people, disrupting even
-                school programs.
+              <motion.h1 variants={slideUpVariants}>
+                <MeetTysonRightp>
+                  Hon. TK was raised at the Komotobo Orphan Mission and now
+                  resides in Ntimaru with his xxxx, xxxx, and their two xxxx,
+                  xxx and xxxxx.
+                </MeetTysonRightp>
+
                 <br />
+                <MeetTysonRightp>
+                  He understands the escalating costs of family life—from fuel
+                  and housing to healthcare—and the persistent neglect of our
+                  communities. Security challenges, including cattle rustling
+                  and instability, continue to affect our people, disrupting
+                  even school programs.
+                  <br />
+                  <br />
+                  For too long, politicians have prioritized personal egos over
+                  tangible progress for our families.
+                </MeetTysonRightp>
+
                 <br />
-                For too long, politicians have prioritized personal egos over
-                tangible progress for our families.
-              </MeetTysonRightp>
-
-              <br />
-
-              {/* <MeetTysonRightp>
-              Hon. TK embodies a new generation of leaders committed to
-              dismantling political gridlock and reforming a broken system.
-              Having firsthand experience with the challenges faced by persons
-              with disabilities, Hon. TK is dedicated to advocating for their
-              rights and changing the prevailing narrative.
-              <br />
-              <br />
-              His diverse support base spans farmers, ranchers, union workers,
-              and law enforcement, reflecting his broad appeal and commitment to
-              all communities.
-            </MeetTysonRightp> */}
+              </motion.h1>
 
               <div>
                 <CTAButton href="#pwds" primary margin="20px 0 0 0">
@@ -76,8 +77,10 @@ const MeetTyson = () => {
               </div>
             </MeetTysonRight>
           </MeetTysonContents>
-        </motion.div>
+        
       </MeetTysonContainer>
+
+      </motion.div>
     </MeetTysonSection>
   );
 };

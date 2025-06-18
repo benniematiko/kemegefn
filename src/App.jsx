@@ -8,11 +8,11 @@ import Home from "./pages/home/Home";
 import Projects from "./pages/projects/Projects";
 
 import Education from "./pages/education/Education";
-import Services from "./pages/services/Services";
+import Campaigns from "./pages/campaigns/Campaigns";
 import Pwdsupport from "./pages/supportpwd/Pwdsupport";
 import Footer from "./components/layout/Footer";
 import FooterCopyRight from "./components/layout/FooterCopyRight";
-
+import PhotoGallary from "./pages/photogallary/PhotoGallary";
 
 const App = () => {
   // We create a theme heree, such as common colors
@@ -39,16 +39,17 @@ const App = () => {
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/services" element={<Services />} />
+
+            <Route path="/campaigns" element={<Campaigns />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/pwdsupport" element={<Pwdsupport />} />
             <Route path="/education" element={<Education />} />
+            <Route path="/photogallary" element={<PhotoGallary />} />
           </Routes>
 
-          <Footer/>
-          <FooterCopyRight/>
+          <Footer />
+          <FooterCopyRight />
         </BrowserRouter>
-        
       </ThemeProvider>
     </>
   );

@@ -28,12 +28,10 @@ export const PrioritiesCards = styled.div`
   flex-wrap: wrap;
   gap: 30px;
 
-  @media(max-width: ${( { theme }) => theme.mobile}){
+  @media (max-width: ${({ theme }) => theme.mobile}) {
     display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 30px;
-  
-
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
   }
 `;
 

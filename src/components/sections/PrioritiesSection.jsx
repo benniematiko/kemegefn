@@ -17,35 +17,46 @@ import { slideUpVariants, zoomInVariants } from "../animation";
 const PrioritiesSection = () => {
   return (
     <PrioritiesSectionStyled>
-      <PrioritiesSectionContainer>
-        <PrioritiesTitle>
-          <h1>Hon. Tyson's Priorities </h1>
-        </PrioritiesTitle>
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        variants={slideUpVariants}
+      >
+        <PrioritiesSectionContainer>
+          <PrioritiesTitle>
+            <h1>Hon. Tyson's Priorities </h1>
+          </PrioritiesTitle>
 
-        <PrioritiesCards>
-          {PrioritiesDatas.map((prioritydata, index) => {
-            return (
-              <SinglePriorities key={index}>
-                <PrioritiesImage>
-                  <img
-                    src={prioritydata.image}
-                    alt=""
-                    className="prioritiesimage"
-                  />
-                </PrioritiesImage>
-                <PrioritiesSubTitle>{prioritydata.title}</PrioritiesSubTitle>
-                <PrioritiesDescription>
-                  {prioritydata.description}
-                </PrioritiesDescription>
+          <PrioritiesCards>
+            {PrioritiesDatas.map((prioritydata, index) => {
+              return (
+                <SinglePriorities key={index}>
+                  <PrioritiesImage>
+                    <img
+                      src={prioritydata.image}
+                      alt=""
+                      className="prioritiesimage"
+                    />
+                  </PrioritiesImage>
+                  <PrioritiesSubTitle>{prioritydata.title}</PrioritiesSubTitle>
+                  <PrioritiesDescription>
+                    {prioritydata.description}
+                  </PrioritiesDescription>
 
-                <CTAButton href="" primary target="_blank" margin="20px 0 0 0">
-                  Learn More
-                </CTAButton>
-              </SinglePriorities>
-            );
-          })}
-        </PrioritiesCards>
-      </PrioritiesSectionContainer>
+                  <CTAButton
+                    href=""
+                    primary
+                    target="_blank"
+                    margin="20px 0 0 0"
+                  >
+                    Learn More
+                  </CTAButton>
+                </SinglePriorities>
+              );
+            })}
+          </PrioritiesCards>
+        </PrioritiesSectionContainer>
+      </motion.div>
     </PrioritiesSectionStyled>
   );
 };
