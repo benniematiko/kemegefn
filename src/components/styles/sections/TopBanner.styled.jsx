@@ -27,12 +27,13 @@ export const TopBannerStyledContent = styled.div`
 export const TopBannerStyledLeft = styled.div`
   width: 100%;
   display: flex;
+  
 
   p {
     margin-right: 20px;
     font-size: 16px;
     font-weight: 200;
-    color: black;
+    color: ${({ theme }) => theme.colors.white};
   }
 `;
 export const TopBannerStyledRight = styled.div`
@@ -45,10 +46,10 @@ export const TopBannerStyledRight = styled.div`
     margin-left: 20px;
     font-size: 16px;
     font-weight: 200;
-    color: black;
+    color: ${({ theme }) => theme.colors.white};
 
     a {
-      color: black;
+      color: ${({ theme }) => theme.colors.white};
     }
   }
 `;

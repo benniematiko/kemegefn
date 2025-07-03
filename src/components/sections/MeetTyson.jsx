@@ -42,7 +42,7 @@ const MeetTyson = () => {
             <MeetTysonRight>
               <motion.h1 variants={slideUpVariants}>
                 <MeetTysonTitle>
-                  <h1>Meet Kemege</h1>
+                  <h1>Meet Hon. Tyson</h1>
                   <p>A brief about me</p>
                 </MeetTysonTitle>
               </motion.h1>

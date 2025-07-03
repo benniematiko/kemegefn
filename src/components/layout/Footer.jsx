@@ -8,6 +8,7 @@ import {
 
 import { motion } from "framer-motion";
 import { slideUpVariants, zoomInVariants } from "../animation";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -25,42 +26,72 @@ const Footer = () => {
                   <h1>Services</h1>
                 </motion.h1>
 
-                <ul>
-                  <li>About Us</li>
-                  <li>Gallery</li>
-                  <li>Programs</li>
-                  <li>Events</li>
-                  <li>News</li>
-                  <li>Contact Us</li>
-                </ul>
+                <motion.h1 variants={slideUpVariants}>
+                  <ul>
+                    <li>
+                      <Link>About Us</Link>
+                    </li>
+                    <li>
+                      <Link>Gallery</Link>
+                    </li>
+                    <li>
+                      <Link>Programs</Link>
+                    </li>
+                    <li>
+                      <Link>Events</Link>
+                    </li>
+                    <li>
+                      <Link>News</Link>
+                    </li>
+                    <li>
+                      <Link>Contact Us</Link>
+                    </li>
+                  </ul>
+                </motion.h1>
               </div>
               <div className="usefullinks">
                 <motion.h1 variants={slideUpVariants}>
                   <h1>Usefullinks</h1>
                 </motion.h1>
 
-                <ul>
-                  <li></li>
-                  <li>Join Us</li>
-                  <li>Donate</li>
-                  <li>Volunteer</li>
-                  <li>Subscribe</li>
-                  <li>Intern</li>
-                  <li>Careers</li>
-                </ul>
+                <motion.h1 variants={slideUpVariants}>
+                  <ul>
+                    <li>
+                      <Link>Join Us</Link>
+                    </li>
+                    <li>
+                      <Link>Donate</Link>
+                    </li>
+                    <li>
+                      <Link>Volunteer</Link>
+                    </li>
+                    <li>
+                      <Link>Subscribe</Link>
+                    </li>
+                    <li>
+                      <Link>Intern</Link>
+                    </li>
+                    <li>
+                      <Link>Careers</Link>
+                    </li>
+                  </ul>
+                </motion.h1>
               </div>
               <div className="contactinfo">
                 <motion.h1 variants={slideUpVariants}>
-                  <h1>Contactinfo</h1>
+                  <h1>Contact Info</h1>
                 </motion.h1>
 
-                <span>Location</span>
-                <span>40, Ntimaru,</span>
-                <span>Migori, Kenya.</span>
-                <span>Phone</span>
-                <span>+254 735 057 260</span>
-                <span> Email</span>
-                <span>info@tysonkemege.ke</span>
+                <motion.h1 variants={slideUpVariants}>
+                  <ul>
+                    <li>Location</li>
+                    <li>40, Ntimaru,</li>
+                    <li>Migori, Kenya.</li>
+                    <li>Phone: +254 735 057 260</li>
+
+                    <li> Email: info@tysonkemege.ke</li>
+                  </ul>
+                </motion.h1>
               </div>
               <div className="download">
                 <motion.h1 variants={slideUpVariants}>

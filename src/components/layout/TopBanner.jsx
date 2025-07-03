@@ -8,9 +8,10 @@ const TopBanner = () => {
       <TopBannerStyledContainer>
         <TopBannerStyledContent>
           <TopBannerStyledLeft>
-            <p><FaEnvelope/> info@kemegetyson.org</p>
-            <p>|</p>
             <p> <FaMobileAlt/> +254 724 560 742</p>
+            <p>|</p>           
+
+            <p><FaEnvelope/> info@kemegetyson.org</p>
           </TopBannerStyledLeft>
 
           <TopBannerStyledRight>

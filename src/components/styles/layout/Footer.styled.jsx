@@ -18,15 +18,14 @@ export const FooterStyledContainer = styled.div`
 
 export const FooterStyledContent = styled.div`
   width: 100%;
-
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
   }
 
 
@@ -45,6 +44,7 @@ export const FooterStyledContent = styled.div`
       color: ${({ theme }) => theme.colors.white};
       font-size: 16px;
       font-weight: 200;
+      margin: 4px 0;
     }
   }
 `;
