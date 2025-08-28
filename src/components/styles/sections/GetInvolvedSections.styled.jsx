@@ -20,6 +20,7 @@ export const GetInvolvedTitle = styled.div`
   padding-bottom: 30px;
   h1 {
     font-size: 2.5rem;
+    
   }
 
   p{
@@ -43,7 +44,54 @@ export const GetInvolvedLeft = styled.div`
   color: white;
   padding: 30px 0 30px 30px;
   cursor: pointer;
+
+  h1 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+  }
+
+  p {
+    margin-bottom: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    font-size:1.3rem;  
+  }
+
+ 
+
+
 `;
+
+export const SubmitInput = styled.input`
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+  font-size: 1.2rem;
+  margin-top: 12px;
+  cursor: pointer;
+  border-radius: 30px;
+
+  &:hover {
+    background-color: #dee7e7;
+  }
+`
+
+export const LabelDiv = styled.div`
+  width: 100%;
+  margin: 6px 0;
+
+  label {
+    font-size:1.1rem;
+  }
+
+  input {
+    padding: 3px;
+    border: none;
+    border-radius: 4px;
+    width: 60%;
+  }
+`
 
 export const GetInvolvedRight = styled.div`
   width: 100%;
@@ -52,4 +100,8 @@ export const GetInvolvedRight = styled.div`
   color: white;
   padding: 30px 0 30px 30px;
   cursor: pointer;
+
+  
 `;
+
+

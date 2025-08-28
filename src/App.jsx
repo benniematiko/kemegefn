@@ -1,6 +1,6 @@
 import { ThemeProvider } from "styled-components";
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import { GlobalStyles } from "./components/styles/Globals.styled";
 import { Navbar } from "./components/layout/Navbar";
@@ -35,7 +35,7 @@ const App = () => {
     <>
       <ThemeProvider theme={theme}>
         <GlobalStyles />
-        <BrowserRouter>
+        <Router>
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
@@ -49,7 +49,7 @@ const App = () => {
 
           <Footer />
           <FooterCopyRight />
-        </BrowserRouter>
+        </Router>
       </ThemeProvider>
     </>
   );

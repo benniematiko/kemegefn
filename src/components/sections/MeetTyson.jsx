@@ -40,12 +40,18 @@ const MeetTyson = () => {
              </motion.h1>
 
             <MeetTysonRight>
-              <motion.h1 variants={slideUpVariants}>
+              
                 <MeetTysonTitle>
-                  <h1>Meet Hon. Tyson</h1>
-                  <p>A brief about me</p>
+                  <motion.h2 variants={slideUpVariants}>Meet</motion.h2>
+                  
+                  <motion.h1 variants={slideUpVariants}>
+                  Hon. Tyson Kemege
+                   </motion.h1>
+
+                   <motion.p variants={slideUpVariants}>A brief about me...</motion.p>
+               
                 </MeetTysonTitle>
-              </motion.h1>
+             
 
               <motion.h1 variants={slideUpVariants}>
                 <MeetTysonRightp>
@@ -70,11 +76,11 @@ const MeetTyson = () => {
                 <br />
               </motion.h1>
 
-              <div>
+              {/* <div>
                 <CTAButton href="#pwds" primary margin="20px 0 0 0">
                   Read more
                 </CTAButton>
-              </div>
+              </div> */}
             </MeetTysonRight>
           </MeetTysonContents>
         

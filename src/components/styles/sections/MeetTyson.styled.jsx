@@ -22,8 +22,7 @@ export const MeetTysonTitle = styled.div`
 
   h1 {
     font-size: 2.5rem;
-    text-transform: uppercase;
-    /* text-align: left; */
+   
     
   }
 
@@ -33,6 +32,7 @@ export const MeetTysonTitle = styled.div`
     line-height: 2.8rem;
     margin-bottom: 20px;
     font-weight: 200;
+    color: ${({ theme}) => theme.colors.orange};
    
   }
 `;

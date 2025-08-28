@@ -28,8 +28,8 @@ const HeroSection = () => {
         <HeroContent>
         <h1>A Leader . Family Man . Community Mobilizer</h1>
         <div>
-          <CTAButton href="#projects">Community Projects</CTAButton>
-          <CTAButton href="#pwds" primary margin="0 0 0 20px">
+          <CTAButton href="/projects">Community Projects</CTAButton>
+          <CTAButton href="/pwdsupport" primary margin="0 0 0 20px">
             Support for PWDs
           </CTAButton>
         </div>

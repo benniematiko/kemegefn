@@ -18,7 +18,7 @@ export const ProjectsSectionTitle = styled.div`
 
   h1 {
     font-size: 2.5rem;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
   }
 
   p {

@@ -2,69 +2,134 @@ import styled from "styled-components";
 
 export const CampaignsStyled = styled.section`
   width: 100%;
+  position: relative;
 `;
 export const CampaignsStyledContainer = styled.div`
   width: 100%;
 `;
+
+export const CampaignsStyledStanding = styled.div`
+  width: 86%;
+  margin: 0 auto;
+  position: relative;
+
+  h1 {
+    font-size: 42px;
+    font-weight: 500;
+    margin-bottom: 24px;
+    color: ${({ theme }) => theme.colors.orange};
+  }
+
+  p {
+    width: 60%;
+    font-weight: 200;
+    font-size: 1.9rem;
+    line-height: 2.8rem;
+    color: white;
+    margin-bottom: 3rem;
+  }
+`;
+
 export const CampaignsStyledContent = styled.div`
   width: 86%;
   margin: 0 auto;
   position: relative;
+`;
+export const CampaignsblocksListing = styled.div`
+  width: 86%;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
   padding: 60px 0;
 
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    grid-template-columns: repeat(1, 1fr);    
+    gap: 30px;
+   
+  }
+`;
+
+export const Campaignblockleft = styled.div`
+  width: 100%;
+  padding-left: 12px;
+
+  h2 {
+    width: 10%;
+    padding: 20px;
+    background-color: orange;
+    font-size: 42px;
+  }
   h1 {
-    color: ${( {theme }) => theme.colors.orange};
-    font-size: 2.2rem;
-    font-weight: 500;
-    margin-bottom: 24px;
+    margin-bottom: 15px;
+    font-size: 36px;
   }
 
   p {
-    font-size: 1.5rem;
-    line-height: 22px;
-    color: white;
-    width: 60%;
-    
-  }
-`;
-export const CampaignsStyledTitle = styled.div`
-  position: absolute;
-
-  bottom: 150px;
-
-  h1 {
-    font-size: 3rem;
+    font-size: 1.9rem;
+    line-height: 2.8rem;
+    font-weight: 200;
   }
 `;
 
 export const Campaignsblock = styled.div`
   width: 100%;
   background: #072f5f;
+  padding: 60px 0;
 `;
 
-export const Campaignsblocks = styled.div`
+export const CampaignsStyledTitle = styled.div`
+  position: absolute;
+  bottom: 100px;
+
+  h1 {
+    font-size: 3rem;
+    width: 70%;
+    color: ${({ theme }) => theme.colors.orange};
+  }
+`;
+
+export const CampaignsblocksContent = styled.div`
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
 `;
-export const Campaignblockleft = styled.div`
-  width: 100%;
-  
-`;
+
 export const Campaignblockright = styled.div`
   width: 100%;
-  
 `;
 export const Campaignblockcomments = styled.div`
   width: 100%;
   background: orange;
-  
+  padding: 120px 0;
+
+  h1 {
+    font-size: 3rem;
+    width: 70%;
+    color: ${({ theme }) => theme.colors.white};
+  }
 `;
 export const Campaignsblocktext = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  
+
+  .btn {
+    padding: 12px 20px;
+    background-color: #04244d;
+    outline: none;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 22px;
+    color: white;
+    border-radius: 4px;
+
+    &:hover {
+      background-color: #0d305e;
+    }
+  }
 `;

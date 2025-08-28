@@ -25,7 +25,7 @@ export const Nav = styled.nav`
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
+  /* position: fixed; */
   z-index: 98;
 
   padding: 0;
@@ -148,11 +148,12 @@ export const NavItemStyled = styled.li`
 `;
 
 export const NavLink = styled.a`
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   color: ${({ theme }) => theme.colors.white};
 
   list-style: none;
   letter-spacing: 1.5px;
+  font-size: 1.4rem;
 
   &::after {
     content: "";

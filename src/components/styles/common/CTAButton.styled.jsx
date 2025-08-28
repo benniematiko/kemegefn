@@ -8,7 +8,7 @@ export const CTAButton = styled.a`
   padding: 10px 20px;
   margin: ${({ margin }) => margin};
   border: 1px solid ${({ theme }) => theme.colors.orange};
-  border-radius: 5px;
+  border-radius: 50px;
   font-size: 16px;
   /* font-family: "S" */
   font-weight: 500;
@@ -16,11 +16,13 @@ export const CTAButton = styled.a`
   display: inline-block;
 
   &:hover {
-    /* background: ${({ primary, theme }) =>
-      primary ? theme.colors.navyBlue : "none "}; */
-    background: transparent;
+    background: ${({ primary, theme }) =>
+      primary ? theme.colors.navyBlue : "none "};
+    /* background: transparent; */
+
     color: ${({ primary, theme }) =>
       primary ? theme.colors.white : theme.colors.orange};
-    border: 1px solid ${({ theme }) => theme.colors.orange};
+    border: 1px solid ${({ primary, theme }) => primary ? theme.colors.navyBlue : "none"}; 
+   
   }
 `;

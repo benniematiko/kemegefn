@@ -46,7 +46,7 @@ const JoinSections = () => {
 
               <div>
                 <CTAButton
-                  href=""
+                  href="/campaigns"
                   primary
                   target="_blank"
                   style={{ marginTop: "14px" }}
