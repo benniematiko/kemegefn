@@ -61,17 +61,21 @@ const GetInvolvedSections = () => {
 
             <div>
               <span>
+                <img src="./images/tshirt1.png" alt="" />
                 Tshirt
-                <img src="" alt="" />
               </span>
               <span>
+                <img src="./images/tshirt1.png" alt="" />
                 Cap
-                <img src="" alt="" />
+               
               </span>
 
               </div>
               <div>
-              <span>Back bag</span>
+              <span>
+                <img src="./images/tshirt1.png" alt="" />
+                Back bag
+                </span>
               <span>Pens</span>
             </div>
 
